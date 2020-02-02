@@ -65,7 +65,6 @@ public class MenuSelection : MonoBehaviour
         {
             sound.Play();
             SceneManager.LoadScene("Conversation");
-
         }
         if(option == 2)
         {
@@ -85,5 +84,6 @@ public class MenuSelection : MonoBehaviour
             option = 1;
             UpdateUI();
         }
+        
     }
 }

@@ -359,7 +359,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 715954297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c826d61714f597645b04da8490535e4d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fea1b8f801f22741b559e3a0ee61d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   npcConversation: {fileID: 73038920}
@@ -505,7 +505,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c732ba1b257ccf04888f4839cc0c480d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4af39b0cb2cd26246a3bff989a0f831f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -978,7 +978,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1476067537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cd2997f20a3c054594dc5174b48411a, type: 3}
+  m_Script: {fileID: 11500000, guid: a6d5d0f186fe44e42a5d6aaf2554e2a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerImage: {fileID: 0}
