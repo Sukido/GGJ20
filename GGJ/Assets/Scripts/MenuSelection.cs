@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuSelection : MonoBehaviour
 {
 
+    public AudioSource sound;
     private int option = 1;
     private bool mMenu = true;
     private GameObject Hammer;
@@ -24,7 +26,7 @@ public class MenuSelection : MonoBehaviour
     void Update()
     {
         var d = Input.GetAxis("Mouse ScrollWheel");
-        if (d > 0f)
+        if (d < 0f)
         {
             option += 1;
             if (mMenu)
@@ -34,7 +36,7 @@ public class MenuSelection : MonoBehaviour
             }
             UpdateUI();
         }
-        else if (d < 0f)
+        else if (d > 0f)
         {
             SelectOption();
         }
@@ -62,11 +64,12 @@ public class MenuSelection : MonoBehaviour
     {
         if(option == 1)
         {
-            // Change Scene to game scene
-
+            sound.Play();
+            SceneManager.LoadScene("Conversation");
         }
         if(option == 2)
         {
+            sound.Play();
             mMenu = false;
             Menu.SetActive(false);
             infoMenu.SetActive(true);
@@ -75,11 +78,13 @@ public class MenuSelection : MonoBehaviour
         }
         else if(option == 3)
         {
+            sound.Play();
             mMenu = true;
             Menu.SetActive(true);
             infoMenu.SetActive(false);
             option = 1;
             UpdateUI();
         }
+        
     }
 }
